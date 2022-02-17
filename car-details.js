@@ -14,6 +14,7 @@ fetch(url, options)
 function showCars(cars) {
   console.log(cars);
   document.querySelector(".price").textContent = cars.price + " " + "$";
+  document.querySelector(".card-header").textContent = cars.brand;
   document.querySelector(".production_year").textContent = cars.production_year;
   document.querySelector(".colour").textContent = cars.colour;
   document.querySelector(".brand").textContent =
@@ -25,5 +26,5 @@ function showCars(cars) {
     cars.seated_passengers;
   document.querySelector(
     ".product-card-photo"
-  ).src = `http://gareth.dk/data/${cars.id}.jpeg`;
+  ).src = `https://mediarei.com/data/${cars.id}.jpeg`;
 }
